@@ -1,0 +1,42 @@
+.block {
+    padding-top: 69px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 32px;
+
+    @media (max-width: 1800px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width:1450px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media (max-width:1040px) {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+.button {
+    margin-left: calc(50% - 80px);
+    margin-top: 80px;
+    width: 170px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    color: #391400;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+}

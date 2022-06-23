@@ -1,0 +1,29 @@
+.badge {
+    position: absolute;
+    left: 45px;
+    top: 256px;
+    background-color: #fff;
+    height: 38px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    .name {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #391400;
+    }
+
+    @media (max-width:1040px) {
+        left: 28px
+    }
+}

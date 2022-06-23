@@ -1,0 +1,10 @@
+.main {
+    margin: auto;
+    padding: 100px 135px;
+    width: 100%;
+    background-color: #FDF0E9;
+
+    @media (max-width:1040px) {
+        padding: 150px 23px;
+    }
+}

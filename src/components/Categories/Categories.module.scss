@@ -1,0 +1,101 @@
+.list {
+    margin: auto;
+    width: 563px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+        color: #391400;
+        font-size: 16px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: 300ms;
+
+        &:hover {
+            color: #16CD53;
+        }
+
+        &-active {
+            color: #16CD53;
+        }
+    }
+
+    @media (max-width:1040px) {
+        display: none;
+    }
+}
+
+
+
+.dropdown {
+    position: relative;
+    padding: 18px 12px;
+    margin: auto;
+    width: 323px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 10px;
+    // border: 1px #EF6D58 solid;
+
+    .dropdown-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #391400;
+        font-size: 14px;
+        cursor: pointer;
+
+        .dropdown-icon {
+            z-index: 100;
+            fill: #EF6D58;
+            transition: 300ms;
+        }
+    }
+
+    .dropdown-block {
+        position: absolute;
+        top: -120px;
+        left: 0;
+        width: 323px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+
+        .dropdown-list {
+            display: flex;
+            flex-direction: column;
+
+            .dropdown-item {
+                padding: 15px 0 10px 13px;
+                color: #391400;
+                font-size: 14px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                border-radius: 10px;
+                transition: 200ms;
+                cursor: pointer;
+
+                &:hover {
+                    border: 1px solid #EF6D58;
+                    border-radius: 10px;
+                }
+            }
+
+            .dropdown-active {
+                padding: 15px 0 10px 13px;
+                color: #391400;
+                font-size: 14px;
+                transition: 200ms;
+                border: 1px solid #EF6D58;
+                border-radius: 10px;
+            }
+
+        }
+    }
+
+    @media (min-width:1040px) {
+        display: none;
+    }
+}

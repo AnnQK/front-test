@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+    width: 370px;
+    height: 416px;
+    align-self: center;
+    justify-self: center;
+
+    .image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .title {
+        position: absolute;
+        left: 45px;
+        top: 315px;
+        font-size: 40px;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    &-active {
+        border: 2px solid #4FE24A;
+        border-radius: 10px;
+    }
+
+    @media (max-width:1040px) {
+        width: 329px;
+
+        .title {
+            left: 28px;
+        }
+    }
+}
