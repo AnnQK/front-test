@@ -13,7 +13,7 @@ function Header() {
             height="43.413"
             viewBox="0 0 45.651 43.413">
             <g id="logo" transform="translate(0.003 -0.004)">
-              <g id="Polygon" fill="none" stroke-miterlimit="10">
+              <g id="Polygon" fill="none" strokeMiterlimit="10">
                 <path d="M22.823,0,45.649,16.586,36.93,43.417H8.716L0,16.586Z" stroke="none" />
                 <path
                   className={styles.icon}
